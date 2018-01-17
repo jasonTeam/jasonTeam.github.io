@@ -12,7 +12,7 @@
 <meta property="og:site_name" content="JasonYang&#39;s Blog">
 <meta property="og:description" content="java帝国成立至今已二十年有余，其中技术经过历史的考验，留下来的都是精华，生为后辈生感荣幸，今天就聊聊它的String,此文仅为自己学习所做，不足之处请勿怪!">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-01-03T13:23:55.648Z">
+<meta property="og:updated_time" content="2018-01-17T15:04:33.595Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="java 之 String">
 <meta name="twitter:description" content="java帝国成立至今已二十年有余，其中技术经过历史的考验，留下来的都是精华，生为后辈生感荣幸，今天就聊聊它的String,此文仅为自己学习所做，不足之处请勿怪!">
@@ -242,7 +242,7 @@
         
             
             <p>java帝国成立至今已二十年有余，其中技术经过历史的考验，留下来的都是精华，生为后辈生感荣幸，今天就聊聊它的String,此文仅为自己学习所做，不足之处请勿怪!<br><a id="more"></a></p>
-<p>站在18年的大坝上看17年的潮水，它就这样渐渐地从我的眼前慢慢的褪去。想伸手去抓住它，似乎也就仅仅只留了一些记忆，这些记忆在人生的长河中犹如海滩上的精巧的贝壳显得您组珍贵。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//String类用final修饰，表示String类不能被继承</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="class"><span class="keyword">class</span> <span class="title">String</span> <span class="keyword">implements</span> <span class="title">Serializable</span>,<span class="title">Comparable</span>&lt;<span class="title">String</span>&gt;,<span class="title">CharSequence</span></span>&#123;</span><br><span class="line">  	<span class="comment">//String类的成员变量</span></span><br><span class="line">  	<span class="keyword">private</span> <span class="keyword">final</span> <span class="keyword">char</span>[] value; <span class="comment">//final修饰的 字符数组类型，表示value的值不能再改变。</span></span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">int</span> hash;</span><br><span class="line">  	<span class="comment">//静态常量</span></span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">long</span> serialVersionUID = -<span class="number">6849794470754667710L</span>; </span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> ObjectStreamField[] serialPersistentFields = <span class="keyword">new</span> ObjectStreamField[<span class="number">0</span>];</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> Comparator&lt;String&gt; CASE_INSENSITIVE_ORDER = <span class="keyword">new</span> CaseInsensitiveComparator((<span class="number">1</span>)<span class="keyword">null</span>);</span><br><span class="line">  	....</span><br><span class="line">    String 类中使用的大量的构造器</span><br><span class="line">  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
         
         </div>
@@ -253,7 +253,7 @@
 
 </div>
 
-    <a data-url="http://yoursite.com/article-3/" data-id="cjcj69a5e00031srbz4iec55d" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://yoursite.com/article-3/" data-id="cjcj7u7f000037srbhf1g61bl" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
