@@ -3,19 +3,18 @@
 <head>
     <meta charset="utf-8">
     
-    <title>Node.js环境搭建 | JasonYang&#39;s Blog</title>
+    <title>归档: 2018/1 | JasonYang&#39;s Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="这是一遍关于Node.js环境搭建的文章，这里简单的显示一些摘要!">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Node.js环境搭建">
-<meta property="og:url" content="http://yoursite.com/szy-first15/index.html">
+    <meta name="description" content="this is a test">
+<meta property="og:type" content="website">
+<meta property="og:title" content="JasonYang&#39;s Blog">
+<meta property="og:url" content="http://yoursite.com/archives/2018/01/index.html">
 <meta property="og:site_name" content="JasonYang&#39;s Blog">
-<meta property="og:description" content="这是一遍关于Node.js环境搭建的文章，这里简单的显示一些摘要!">
+<meta property="og:description" content="this is a test">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-12-20T13:50:03.680Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Node.js环境搭建">
-<meta name="twitter:description" content="这是一遍关于Node.js环境搭建的文章，这里简单的显示一些摘要!">
+<meta name="twitter:title" content="JasonYang&#39;s Blog">
+<meta name="twitter:description" content="this is a test">
     
 
     
@@ -156,7 +155,7 @@
         </div>
         <div class="article-info profile-block">
             <div class="article-info-block">
-                18
+                3
                 <span>文章</span>
             </div>
             <div class="article-info-block">
@@ -208,162 +207,66 @@
 </aside>
 
             
-            <section id="main"><article id="post-szy-first15" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
+            <section id="main"><div class="timeline timeline-wrap">
+    
+            <div class="timeline-row timeline-row-major">
+                <span class="node"><i class="fa fa-calendar"></i></span>
+                <h1 class="title">2018</h1>
+            </div>
         
-        
-            <header class="article-header">
+        <div class="timeline-row">
+            <span class="node"></span>
+            <div class="content">
                 
     
-        <h1 class="article-title" itemprop="name">
-            Node.js环境搭建
+        <h1 itemprop="name">
+            <a class="timeline-article-title" href="/article-3/">java 之 String</a>
         </h1>
     
 
-                
-                    <div class="article-meta">
-                        
+                <div class="article-meta">
+                    
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/szy-first15/">
-            <time datetime="2017-12-20T15:26:03.643Z" itemprop="datePublished">2017-12-20</time>
+        <a href="/article-3/">
+            <time datetime="2018-01-17T14:27:47.368Z" itemprop="datePublished">2018-01-17</time>
         </a>
     </div>
 
 
-                        
-                        
-                    </div>
-                
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-            
-            <p>这是一遍关于Node.js环境搭建的文章，这里简单的显示一些摘要!<br><a id="more"></a></p>
-<p>这两年Nodejs发展极其迅速，开始接触nodejs的时候版本还在0.10.x，现在居然已经到5.3.x了，<br>发展如此迅速也说明了其在实战中获得广大开发者的认可程度之高。在实战中也忍不住使用了几次，<br>总体体验还是非常不错的，开始向朋友推荐使用，于是应邀写一些关于Nodejs的实例，那么就先从环境搭建作为开始吧。</p>
-<p>nvm安装<br>nvm全称Node Version Manager，Node版本管理器。由于nodejs的更新速度，其版本众多，我们经常能<br>找到的各种资料可能都是基于不同版本，我们写的程序可能也会依赖不同的版本，我们需要在本机上方便的切换不同版本的nodejs，<br>所以我们需要它来帮助我们管理，其项目地址：<a href="https://github.com/creationix/nvm" target="_blank" rel="noopener">https://github.com/creationix/nvm</a></p>
-
-        
-        </div>
-        <footer class="article-footer">
-            <div class="share-container">
-
-
-
-</div>
-
-    <a data-url="http://yoursite.com/szy-first15/" data-id="cjbm9n4sr000a58rbbt9rx39s" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
-<script>
-    (function ($) {
-        // Prevent duplicate binding
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
-
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-</script>
-
-            
-    
-        <a href="http://yoursite.com/szy-first15/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://yoursite.com/szy-first15/">评论</a>
-    
-
-        </footer>
-    </div>
-    
-        
-<nav id="article-nav">
-    
-        <a href="/szy-first3/" id="article-nav-newer" class="article-nav-link-wrap">
-            <strong class="article-nav-caption">上一篇</strong>
-            <div class="article-nav-title">
-                
-                    文章测试
-                
+                    
+                    
+                </div>
             </div>
+        </div>
+    
+        <div class="timeline-row">
+            <span class="node"></span>
+            <div class="content">
+                
+    
+        <h1 itemprop="name">
+            <a class="timeline-article-title" href="/article-2/">我的2017</a>
+        </h1>
+    
+
+                <div class="article-meta">
+                    
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/article-2/">
+            <time datetime="2018-01-03T13:08:11.070Z" itemprop="datePublished">2018-01-03</time>
         </a>
-    
-    
-        <a href="/szy-first14/" id="article-nav-older" class="article-nav-link-wrap">
-            <strong class="article-nav-caption">下一篇</strong>
-            <div class="article-nav-title">文章测试</div>
-        </a>
-    
-</nav>
-
-
-    
-</article>
-
-
-    
-    <section id="comments">
-    
-        
-    <div id="disqus_thread">
-        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     </div>
 
-    
-    </section>
 
+                    
+                    
+                </div>
+            </div>
+        </div>
+    
+</div>
 </section>
             
                 <aside id="sidebar">
@@ -373,6 +276,44 @@
         <h3 class="widget-title">最新文章</h3>
         <div class="widget">
             <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/article-3/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/article-3/" class="title">java 之 String</a></p>
+                            <p class="item-date"><time datetime="2018-01-17T14:27:47.368Z" itemprop="datePublished">2018-01-17</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/article-2/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/article-2/" class="title">我的2017</a></p>
+                            <p class="item-date"><time datetime="2018-01-03T13:08:11.070Z" itemprop="datePublished">2018-01-03</time></p>
+                        </div>
+                    </li>
                 
                     <li>
                         
@@ -393,82 +334,6 @@
                         </div>
                     </li>
                 
-                    <li>
-                        
-                        <div class="item-thumbnail">
-                            <a href="/szy-first9/" class="thumbnail">
-    
-    
-        <span class="thumbnail-image thumbnail-none"></span>
-    
-</a>
-
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"></p>
-                            <p class="item-title"><a href="/szy-first9/" class="title">文章测试</a></p>
-                            <p class="item-date"><time datetime="2017-12-20T15:26:03.648Z" itemprop="datePublished">2017-12-20</time></p>
-                        </div>
-                    </li>
-                
-                    <li>
-                        
-                        <div class="item-thumbnail">
-                            <a href="/szy-first8/" class="thumbnail">
-    
-    
-        <span class="thumbnail-image thumbnail-none"></span>
-    
-</a>
-
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"></p>
-                            <p class="item-title"><a href="/szy-first8/" class="title">文章测试</a></p>
-                            <p class="item-date"><time datetime="2017-12-20T15:26:03.647Z" itemprop="datePublished">2017-12-20</time></p>
-                        </div>
-                    </li>
-                
-                    <li>
-                        
-                        <div class="item-thumbnail">
-                            <a href="/szy-first7/" class="thumbnail">
-    
-    
-        <span class="thumbnail-image thumbnail-none"></span>
-    
-</a>
-
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"></p>
-                            <p class="item-title"><a href="/szy-first7/" class="title">文章测试</a></p>
-                            <p class="item-date"><time datetime="2017-12-20T15:26:03.647Z" itemprop="datePublished">2017-12-20</time></p>
-                        </div>
-                    </li>
-                
-                    <li>
-                        
-                        <div class="item-thumbnail">
-                            <a href="/szy-first6/" class="thumbnail">
-    
-    
-        <span class="thumbnail-image thumbnail-none"></span>
-    
-</a>
-
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"></p>
-                            <p class="item-title"><a href="/szy-first6/" class="title">文章测试</a></p>
-                            <p class="item-date"><time datetime="2017-12-20T15:26:03.646Z" itemprop="datePublished">2017-12-20</time></p>
-                        </div>
-                    </li>
-                
             </ul>
         </div>
     </div>
@@ -480,7 +345,7 @@
     <div class="widget-wrap">
         <h3 class="widget-title">归档</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">十二月 2017</a><span class="archive-list-count">18</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">一月 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">十二月 2017</a><span class="archive-list-count">1</span></li></ul>
         </div>
     </div>
 
@@ -512,7 +377,7 @@
         <footer id="footer">
     <div class="outer">
         <div id="footer-info" class="inner">
-            &copy; 2017 ShengZiYang<br>
+            &copy; 2018 ShengZiYang<br>
             Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Theme by <a href="http://github.com/ppoffice">PPOffice</a>
         </div>
     </div>
@@ -522,13 +387,11 @@
     <script>
     var disqus_config = function () {
         
-            this.page.url = 'http://yoursite.com/szy-first15/';
-        
-        this.page.identifier = 'szy-first15';
+        this.page.identifier = '';
     };
     (function() { 
         var d = document, s = d.createElement('script');  
-        s.src = '//' + 'hexo-theme-icarus' + '.disqus.com/embed.js';
+        s.src = '//' + 'hexo-theme-icarus' + '.disqus.com/count.js';
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
     })();
